@@ -1,0 +1,20 @@
+1. Explain heap data structure. 
+2. What's the difference between List and Set (Java). 
+3. What does equals() method do in java?
+4. The main question was a 2sum question. What is the best way to find out if two elements in an array sum to a specific value. The answer involves using a hash table
+5. How to detect a loop in a linked list? 
+6. Design a short program for a deck of cards that has methods that will 1.) take a card from the top of the deck and 2.) shuffle the deck  
+7. What does the key word volatile mean in Java?  
+8. Find all unique values of a sorted integer array using only primitives. 
+9. Difference between class and object. What's the feature of a Set? 3Sum.  
+10. one question is to transfer integer to Roman, one question is about prefix tree, one question is for cyclic linked list. 
+1st HR phone screen: every easy, most of the questions are very common, asked about school's projects, work experience etc.
+2nd Technical phone screen: most of them are fairly easy
+   1. What is the difference between an array and a vector
+   2. What is the difference between a class and a object
+   3. Given an array of integers, find the max int
+   4. Remove duplications from an array of int
+   5. Design a Unix file system…  with OOP (I failed this question, should have prepared better)
+   &nbsp;&nbsp;&nbsp;6. What does 'grep' command in linux do?
+   &nbsp;&nbsp;&nbsp;7. What does 2^16 equal?
+   Dependency graph
