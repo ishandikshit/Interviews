@@ -1,0 +1,41 @@
+class Node{
+  int key;
+  Node left, right;
+  
+  public Node(int item){
+  	key = item;
+    left = right = null;
+  }  
+}
+
+class Binarytree{
+  Node root;
+  
+  Binarytree(){
+  	root = null;
+  }
+  
+  
+  void preordertraversal(Node node){
+    if (node==null)
+      return;
+    System.out.println("Key : "+node.key);
+    preordertraversal(node.left);
+	preordertraversal(node.right);    
+  }
+  
+  void preordertraversal() {	 preordertraversal(root); }
+
+  int getHeight(Node node){
+  	if(node.)
+  }
+  
+  public static void main (String[] args){
+  	Binarytree bt = new Binarytree();
+ 	bt.root = new Node(2);
+  	bt.root.left = new Node(1);
+  	bt.root.right = new Node(3);
+    
+    bt.preordertraversal();
+  }
+}
