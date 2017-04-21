@@ -1,0 +1,29 @@
+//check if binary tree is a heap
+
+
+public static void main(String[] args){
+  BinaryTree bt = new BinaryTree();
+  bt.add
+  .
+  .
+  .
+  .
+  
+  bt.isHeap(bt.root);
+}
+
+public boolean isHeap(Node node){
+  if (root.left.data!=null && root.data>root.left.data){
+    isHeap(root.left.data);
+  }
+  else{
+    Throw new Exception("Not a Heap tree!");
+  }
+  
+  if (root.right.data!=null && root.data>root.right.data){
+    isHeap(root.right.data);
+  }
+  else{
+    Throw new Exception("Not a Heap tree!");
+  }
+}
