@@ -1,0 +1,15 @@
+AWS
+---
+
+> AWS Elastic Beanstalk - Ochestration service. PaaS. Deployment requires a number of components to be defined, such as application, version, configuration template and environment.
+
+> AWS EC2 - IaaS. Its like users renting virtual machines. A user can setup multiple instances on their AWS and can start stop terminate instances as per need. The users are charged per hour usage of the instance, thus it is called elastic.
+https://en.wikipedia.org/wiki/Amazon_Elastic_Compute_Cloud#Operating_systems
+
+>AWS S3 - Storage service. Allows web hosting too. Also can be used to store big deployment bundles.
+
+>AWS lambda - serverless small computing platform designed to be used in making small applications. The lambda can be called as a response to events like alexa trigger etc.
+
+>AWS API gateway - REST interface for microservices on AWS.
+
+>DynamoDB - NoSQL, low latency database. Can be changed, has not definite schema, Amazon's proprietery. DynamoDB uses synchronous replication across multiple datacenters
