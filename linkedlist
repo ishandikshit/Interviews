@@ -1,0 +1,44 @@
+class Node{
+  Node next;
+  int key;
+  
+  Node(int item){
+    key = item;
+    next = null;
+  }
+}
+
+class LinkedList{
+  Node head;
+  
+  LinkedList(){
+    head = new Node();
+  }
+  
+  public void push(int item){
+    Node n = new Node(item);
+    n.nex = head;
+    head = n;
+  }
+  
+  public insertAfter(int item, int value){
+    Node new = new Node(value);
+    while (head!=null){
+     if(head.key == item){
+        new.next = head;
+        head = new;
+        return;
+      }
+      head = head.next;
+    }
+  }
+  
+  public insertAtend(int value){
+    Node n = new Node(value);
+    while(head!=null){
+      head = head.next;
+    }
+    head.next = n;
+    return;
+  }
+}
