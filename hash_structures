@@ -1,0 +1,11 @@
+HashMap<Integer, String> hMap = new HashMap<Integer, String>();
+hMap.put(1, "Ishan");
+hMap.get(1);
+
+HashTable<Integer, String> hTable = new HashTable<Integer, String>();
+hTable.put(1, "Prabhakar");
+hTable.get(1);
+
+HashSet<String> hSet = new HashSet<String>();
+hSet.add("Brendan");
+hSet.get(1);
