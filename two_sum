@@ -1,0 +1,10 @@
+public int[] twoSum(int[] arr, int x){
+  HashMap<Integer, Integer> hm = new HashMap<Integer, Integer>();
+  for(int i =0; i<arr.size; i++){
+    if(hm.contains(x-arr[i])){
+      return new int[]{arr[i], x-arr[i]};
+    }
+      hm.put(i, arr[i])
+    }
+  }
+}
