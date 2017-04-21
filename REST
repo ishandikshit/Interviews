@@ -1,0 +1,7 @@
+HTTP operations:
+
+GET: get a resource by a unique identifier etc
+PUT: update/replace a resource
+POST: create a new resource
+DELETE: delete a resource by unique identifier
+PATCH: no clue
