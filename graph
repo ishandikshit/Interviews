@@ -16,6 +16,14 @@ class Graph{
     adjL[v].add(w);
   }
   
+  bfs(v){
+    for(i=0;i<v;i++){
+      for(List l:adjL[i]){
+        System.out.println(" "+adjL[i].get())
+      }
+    }
+  }
+  
   public static void main(String[] args){
     Graph g = new Graph(4);
     
