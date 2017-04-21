@@ -1,0 +1,14 @@
+int binarySearch(arr[], int f, int l, int x){
+  int mid = (f+l)/2;
+  if (arr[mid]==x){
+    return mid;
+  }
+  if (arr[mid]>x){
+    binarySearch(arr[], int f, int mid-1, int x)
+  }
+  if (arr[mid]<x){
+    binarySearch(arr[], int mid+1, int l, int x)
+  }
+  
+  return 0;//no results code
+}
