@@ -1,0 +1,10 @@
+public int diamater(Node root){
+    int lheight = height(root.left);
+    int rheight = height(root.right);
+    
+    ld = diameter(root.left);
+    rd = diameter(root.right);
+    
+    int x = Math.max(lheight+rheight+1, Math.max(ld, rd));
+    return x;
+}
