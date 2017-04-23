@@ -1,0 +1,59 @@
+class Node{
+    int key;
+    Node left, right;
+    
+    Node(){
+        left = right = null
+    }
+    
+    Node(int x){
+        key = x;
+        left = right = null;
+    }
+}
+
+class BinaryTree{
+    Node root;
+    
+    BinaryTree(){
+        root = null;
+    }
+    
+    BinaryTree(int x){
+        root.key = x;
+    }
+    
+    traversePreorder(Node root){
+        Node node = root;
+        if(node == null)
+            return;
+        System.out.println(" "+node.key);
+        traversePreorder(node.left);
+        traversePreorder(node.right);
+
+    }
+    
+    traverseLevelOrder(Node root){
+        int h = height(root);
+        for(int i=1; i<=h;i++){
+            givenLevel(root, h);
+        }
+    }
+    
+    givenLevel(Node root, int h){
+        if(h==1)
+            System.out.print(" "+root.key);            
+        givenLevel(root.left, h-1);
+        givenLevel(root.right, h-1);
+    }
+    
+    height(Node root){
+        if(root == null){
+            return 0;
+        }
+        int l = height(root.left);
+        int r = height(root.right);
+        int h = Math.max(l,r);
+        return h+1;
+    }
+}
