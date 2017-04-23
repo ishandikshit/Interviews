@@ -1,0 +1,15 @@
+//Iterative - keep going next->next->next until the data is found.
+
+public Node find(Node head, int x){
+    if (head.data = x){
+        return head;
+    }
+    return find(head.next, x);
+}
+
+public push(int x){
+    Node newNode = new Node(x);
+    newNode.next = head;
+    //updating head with the new Node
+    head = newNode;
+}
