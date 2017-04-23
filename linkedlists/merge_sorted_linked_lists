@@ -1,0 +1,40 @@
+//A and B are the two linked lists. Keep track of both the list tops, whichever is smaller takes the spot in the new list.
+
+class Node{
+  int key;
+  Node next;
+  
+  Node(){
+    next = null;
+  }
+  
+  Node(int item){
+    key = item;
+  }
+}
+
+class LinkedList{
+  Node head;
+  
+  LinkedList(){
+    head = null;
+  }
+  
+  LinkedList merge(Node head1, Node head2){
+   LinkedList merged = new LinkedList();
+   Node node1 = head1;
+   Node node2 = head2;
+   while(node1!=null && node2 != null){
+     if(node1 < node2 || node2 == null){
+       merged.add(node1);
+       node1 = node1.next;    
+     }
+     else if(node2>=node1 || node1 == null){
+       merged.add(node2);
+       node2 = nde2.next;
+     }
+   }
+
+   return merged;
+  }
+}
