@@ -1,0 +1,19 @@
+//same as level order, just add 1 in stead of prinitng the values
+
+get Width(Node root){
+  int h = height(root);
+  
+  for(int i = 1; i<=h; i++){
+    getWidthAtLevel(root, i);
+  }
+}
+
+getWidthAtLevel(Node root, int h){
+  if(h==0)
+    return null;
+  if(h==1)
+    return 1;
+  else if(h>1){
+    return getWidthAtLevel(root.left, h-1)+getWidthAtLevel(root.right, h-1);
+  }
+}
