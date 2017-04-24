@@ -1,0 +1,76 @@
+/*
+> lsop
+<lang>,<pid>,<memory>,<process>
+
+Java,122,512M,/usr/java a1
+Python,134,22M,/usr/python
+Java,187,784M,/usr/java a2
+scp,9876,1M,scp a b
+
+*/
+
+public findMemory(String filename){
+
+    String line ="";
+    FileReader f = new FileReader(filename);
+    HashMap<Integer, String> tm = new HashMap<Integer, String>();
+    
+    int[] mem_arr = new int[4];
+    BufferedReader br = new BufferedReader(f);
+    
+    int maxmemory=0;
+    //String final_language = "";
+    //String final_pid ="";
+    String complete_process ="";
+    int i =0;
+    while(line = br.readLine()!=null){
+        String[] parts = line.split(",");
+        //String lang = parts[0];
+        //String pid = parts[1];
+        String memory = parts[2];
+                //for sorting purposes
+        tm.put(memory, line);
+           
+        int memory_int = Integer.parseInt(memory);
+        mem_arr[i]=memory;
+
+        if(memory_int>maxmemory){
+            maxmemory=memory_int;
+           // final_language = lang;
+            //final_pid = pid;
+            complete_process=line;
+            i=i+1;
+        }
+        
+        
+        //string spilt it by ','
+        //[1],[2] - concat them
+        //typecast to int
+        //store in a array of int
+        
+        //finally find max of the memory
+    } 
+    
+    sortMem(int[] arr){
+        for(int i =0;i<arr.length-1; i++){
+            for(int j=0; j<arr.length-1;j++){
+                if(arr[j]>arr[i+1]){
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1]=temp;
+                }
+                
+            }
+        }
+        System.out.print(arr[]);
+        for(int i = 0;i<arr.length; i++){
+            System.out.print(tm.get(arr[i])+", ");
+        }
+    }
+    System.out.println("Complete Process: "+complete_process+" Memory: "+maxmemory); 
+    
+    for(int)
+    
+    
+      
+}
