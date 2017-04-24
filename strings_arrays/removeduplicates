@@ -1,0 +1,14 @@
+//traverse through array, if letter found in hashmap, insert ' '
+
+public int[] removeDuplicates(int[] arr){
+    HashMap<Integer, String> hm = new Hashmap<integer, String>();
+    for(int i = 0;i<arr.length; i++){
+        if(hm.containsValue(arr[i])){
+            ArrayUtils.remove(arr[i]);
+        }
+        else{
+            hm.put(i, arr[i]);
+        }
+    }
+    return arr;
+}
