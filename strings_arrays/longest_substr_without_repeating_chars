@@ -1,0 +1,20 @@
+//create string result, add elements to hashmap, keep longest substring in result string
+
+public String longestNonRepeaatingSubstr(String input){
+  HashMap<Integer, Character> hm = new HashMap<Integer, Character>();
+  int a =0;
+  String result = "";
+  for(int i =0; i<input.length; i++){
+    if(hm.containsValue(input.charAt(i))){
+      String result_new = input.charAt(a to i-1); //substr(a,i-1)
+      if (result_new.length>result.length)
+        result = result_new;
+      a=i;
+    }
+    else{
+      hm.put(i, input.charAt(i));
+    }
+    
+  }
+  return result;
+}
