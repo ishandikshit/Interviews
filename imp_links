@@ -12,3 +12,12 @@ Why SOAP - http://spf13.com/post/soap-vs-rest
 Multithreading - http://stackoverflow.com/questions/16689449/printing-even-and-odd-using-two-threads-in-java
 
 Graph DBs
+
+
+66) What is difference between abstract class and interface?
+Abstract class	Interface
+1)An abstract class can have method body (non-abstract methods).	Interface have only abstract methods.
+2)An abstract class can have instance variables.	An interface cannot have instance variables.
+3)An abstract class can have constructor.	Interface cannot have constructor.
+4)An abstract class can have static methods.	Interface cannot have static methods.
+5)You can extends one abstract class.	You can implement multiple interfaces.
