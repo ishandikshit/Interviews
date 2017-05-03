@@ -1,0 +1,22 @@
+class LinkedList(){
+  Node head;
+  LinkedList(){
+    head = new Node();
+  }
+  LinkedList(int item){
+    head = new Node(item);
+  }
+  
+  detectLoop(Node head){
+    HashMap<Integer, Node> hm = new HashMap<>();
+    Node node = head;
+    if(hm.containsKey(node.key)){
+      return True;
+    }
+    else{
+      hm.put(node.key, node);
+      node = node.next;
+    }
+    return false;
+  }
+}
