@@ -1,0 +1,57 @@
+// Class name must be "Main"
+// Libraries included:
+// json simple, guava, apache commons lang3, junit, jmock
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        int a[] = {2, 5, 2, 8, 5, 6, 8, 8};
+        HashMap<Integer, Double> hm = new HashMap();
+        for (int i=0;i<a.length;i++){
+            
+            
+            if (hm.containsKey(a[i])){
+                
+                double val = hm.get(a[i]);
+                hm.put(a[i], val/2);
+                
+            }
+            else{
+                hm.put(a[i], 10.0);
+            }
+        }
+        int min = 10;
+        int key=-1;
+        int index=0;
+        double b[] = new double[a.length];
+        for(int i=0;i<hm.size();i++){
+            int min_index = findmin(hm);
+            System.out.println(index+(int)(10/hm.get(min_index)));
+            
+            for(int j=index;j<(index+(int)(10/hm.get(min_index)));j++)
+            {
+                b[i]=hm.get(min_index);
+                index++;
+                hm.remove(min_index);
+            }
+            
+        }
+        
+        System.out.print(b);
+    }
+    
+    static int findmin(HashMap<Integer, Double> hm1){
+        double min =10.0;  
+        int key = -1;
+        for(Map.Entry m:hm1.entrySet()){
+            if((double)m.getValue()<min){
+                min = (double)m.getValue();
+                key = (int)m.getKey();
+            }
+        
+        }
+        System.out.println(key);
+        return key;
+            
+    }
+}
