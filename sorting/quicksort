@@ -1,0 +1,27 @@
+# #quick sort
+
+def part(arr, low, high):
+  #partition
+  i=low-1
+  pivot = arr[high]
+  for j in range(low, high):
+    if arr[j]<=pivot:
+      i+=1
+      arr[i],arr[j]=arr[j],arr[i]
+  
+  #final move
+  arr[i+1], arr[high] = arr[high], arr[i+1]
+  
+  return i+1
+
+def qsort(s, low, high):
+  if low<high:
+    pindex = part(s, low, high)
+    qsort(s, low, pindex-1)
+    qsort(s, pindex+1, high)
+    
+s=[4,5,2,8,3,7,9]
+
+sortedarray = qsort(s, 0, len(s)-1)
+
+print s
